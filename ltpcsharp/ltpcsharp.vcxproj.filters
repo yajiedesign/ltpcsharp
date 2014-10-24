@@ -44,6 +44,12 @@
     <ClCompile Include="Splitsnt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Postagger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Recognizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />

@@ -9,8 +9,8 @@ namespace TestAndDebug
 
         public void SplitSentenceTestMethod()
         {
-            List<string> sentences = new List<string>();
-            ltpcsharp.splitsnt.SplitSentence("111", sentences);
+            List<string> sentences = null;
+            ltpcsharp.Splitsnt.SplitSentence("111", out sentences);
         }
 
  

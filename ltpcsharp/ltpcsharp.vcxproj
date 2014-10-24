@@ -105,7 +105,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>splitsnt.lib;segmentor.lib;parser.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>splitsnt.lib;segmentor.lib;parser.lib;postagger.lib;ner.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -144,6 +144,8 @@
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="ltpcsharp.cpp" />
     <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="Postagger.cpp" />
+    <ClCompile Include="Recognizer.cpp" />
     <ClCompile Include="Segmentor.cpp" />
     <ClCompile Include="Splitsnt.cpp" />
     <ClCompile Include="Stdafx.cpp">

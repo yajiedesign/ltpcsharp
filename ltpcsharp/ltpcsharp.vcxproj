@@ -105,7 +105,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>splitsnt.lib;segmentor.lib;parser.lib;postagger.lib;ner.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>boost_regex.lib;splitsnt.lib;segmentor.lib;parser.lib;postagger.lib;ner.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -127,7 +127,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>splitsnt.lib;segmentor.lib;parser.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>boost_regex.lib;splitsnt.lib;segmentor.lib;parser.lib;postagger.lib;ner.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

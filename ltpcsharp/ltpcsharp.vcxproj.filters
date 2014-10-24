@@ -35,10 +35,13 @@
     <ClCompile Include="Stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="splitsnt.cpp">
+    <ClCompile Include="Segmentor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Segmentor.cpp">
+    <ClCompile Include="Parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Splitsnt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

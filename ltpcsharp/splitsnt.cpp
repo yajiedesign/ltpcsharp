@@ -6,10 +6,9 @@
 #include <msclr/marshal_cppstd.h>
 #include "../ltpinclude/SplitSentence.h"
 
-
-
 using namespace System;
 using namespace System::Collections::Generic;
+using namespace System::Runtime::InteropServices;
 
 int SplitSentenceCpp(const std::string & paragraph,
 	std::vector<std::string> & sentences){
@@ -18,10 +17,10 @@ int SplitSentenceCpp(const std::string & paragraph,
 
 namespace ltpcsharp {
 
-	public ref class splitsnt
+	public ref class Splitsnt
 	{
 	public:
-		static int SplitSentence(String^ paragraph, List<String^>^ sentences)
+		static int SplitSentence(String^ paragraph, [Out] List<String^>^% sentences)
 		{
 			std::wstring_convert<std::codecvt_utf8<wchar_t>> conv;
 			std::string converted_paragraph = conv.to_bytes(msclr::interop::marshal_as<std::wstring>(paragraph));

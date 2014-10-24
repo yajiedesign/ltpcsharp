@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include "ltpcsharp.h"
 #include <string>
 #include <memory>
 #include <locale>
@@ -6,13 +7,9 @@
 #include <msclr/marshal.h>
 #include <msclr/marshal_cppstd.h>
 #include "../ltpinclude/segment_dll.h"
-
-
-
 using namespace System;
 using namespace System::Collections::Generic;
-
-
+using namespace System::Runtime::InteropServices;
 
 namespace ltpcsharp {
 
@@ -51,17 +48,13 @@ namespace ltpcsharp {
 			wrapper = nullptr;
 		}
 
-		int Segment(String^ line, List<String^>^ words)
+		int Segment(String^ line, [Out]  List<String^>^% words)
 		{
 			std::wstring_convert<std::codecvt_utf8<wchar_t>> conv;
 			std::string converted_line = conv.to_bytes(msclr::interop::marshal_as<std::wstring>(line));
 			std::vector<std::string> vsent;
 			int doret = segmentor_segment(wrapper, converted_line, vsent);
-			for each (std::string svar in vsent)
-			{
-				std::wstring wideStr = conv.from_bytes(svar);
-				words->Add(msclr::interop::marshal_as< String^ >(wideStr));
-			}
+			words = Help::CppToCSharp(vsent);
 			return doret;
 		}
 

@@ -105,7 +105,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>splitsnt.lib;segmentor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>splitsnt.lib;segmentor.lib;parser.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -127,7 +127,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>splitsnt.lib;segmentor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>splitsnt.lib;segmentor.lib;parser.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -143,8 +143,9 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="ltpcsharp.cpp" />
+    <ClCompile Include="Parser.cpp" />
     <ClCompile Include="Segmentor.cpp" />
-    <ClCompile Include="splitsnt.cpp" />
+    <ClCompile Include="Splitsnt.cpp" />
     <ClCompile Include="Stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

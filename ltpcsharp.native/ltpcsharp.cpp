@@ -5,7 +5,7 @@
 #include "ltpcsharp.h"
 
 
-namespace ltpcsharp {
+namespace ltpcsharp_native {
 
 	std::vector<std::string> Help::CSharpToCpp(List<String^>^ stringlist)
 	{

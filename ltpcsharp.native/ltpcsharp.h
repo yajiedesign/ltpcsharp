@@ -12,7 +12,7 @@
 using namespace System;
 using namespace System::Collections::Generic;
 
-namespace ltpcsharp {
+namespace ltpcsharp_native {
 
 	ref class Help
 	{

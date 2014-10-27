@@ -10,7 +10,7 @@ namespace TestAndDebug
         public void SplitSentenceTestMethod()
         {
             List<string> sentences = null;
-            ltpcsharp.Splitsnt.SplitSentence("111", out sentences);
+            //ltpcsharp_native.Splitsnt.SplitSentence("111", out sentences);
         }
 
  

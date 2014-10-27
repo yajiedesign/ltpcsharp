@@ -15,7 +15,7 @@ int SplitSentenceCpp(const std::string & paragraph,
 	return SplitSentence(paragraph, sentences);
 }
 
-namespace ltpcsharp {
+namespace ltpcsharp_native {
 
 	public ref class Splitsnt
 	{

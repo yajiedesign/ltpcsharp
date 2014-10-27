@@ -12,7 +12,7 @@ using namespace System;
 using namespace System::Collections::Generic;
 using namespace System::Runtime::InteropServices;
 
-namespace ltpcsharp {
+namespace ltpcsharp_native {
 
 	public ref class Parser
 	{

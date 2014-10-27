@@ -24,6 +24,21 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Parser.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Postagger.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Recognizer.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Segmentor.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Splitsnt.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ltpcsharp.cpp">
@@ -35,19 +50,7 @@
     <ClCompile Include="Stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Segmentor.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Parser.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Splitsnt.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Postagger.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Recognizer.cpp">
+    <ClCompile Include="LtpFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

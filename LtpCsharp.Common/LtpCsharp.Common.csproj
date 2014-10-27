@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{76DD22ED-95B7-4FCF-861E-D88743C187F2}</ProjectGuid>
+    <ProjectGuid>{D4C571DB-0F45-49DA-9B45-0CC28580C75B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LtpCsharp</RootNamespace>
-    <AssemblyName>LtpCsharp</AssemblyName>
+    <RootNamespace>LtpCsharp.Common</RootNamespace>
+    <AssemblyName>LtpCsharp.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,33 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LtpFactory.cs" />
-    <Compile Include="Parser.cs" />
-    <Compile Include="Postagger.cs" />
-    <Compile Include="Recognizer.cs" />
-    <Compile Include="Segmentor.cs" />
+    <Compile Include="ILtpFactory.cs" />
+    <Compile Include="IParser.cs" />
+    <Compile Include="IPostagger.cs" />
+    <Compile Include="IRecognizer.cs" />
+    <Compile Include="ISegmentor.cs" />
+    <Compile Include="ISplitsnt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LtpCsharp.Common\LtpCsharp.Common.csproj">
-      <Project>{d4c571db-0f45-49da-9b45-0cc28580c75b}</Project>
-      <Name>LtpCsharp.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ltpcsharp.native\ltpcsharp.native.vcxproj">
-      <Project>{fe18bad0-a6dd-4369-a1c2-031c9661ff87}</Project>
-      <Name>ltpcsharp.native</Name>
-      <Private>False</Private>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\x64\Release\ltpcsharp.native.dll">
-      <Link>x64\ltpcsharp.native.dll</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\x86\Release\ltpcsharp.native.dll">
-      <Link>x86\ltpcsharp.native.dll</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

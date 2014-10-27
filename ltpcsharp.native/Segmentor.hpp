@@ -1,3 +1,4 @@
+#pragma once
 #include "stdafx.h"
 #include "ltpcsharp.h"
 #include <string>
@@ -13,7 +14,7 @@ using namespace System::Runtime::InteropServices;
 
 namespace ltpcsharp_native {
 
-	public ref class Segmentor
+	ref class Segmentor :LtpCsharp::Common::ISegmentor
 	{
 		void * wrapper = nullptr;
 	public:
@@ -48,7 +49,7 @@ namespace ltpcsharp_native {
 			wrapper = nullptr;
 		}
 
-		int Segment([In]  String^ line, [Out]  List<String^>^% words)
+		virtual	int Segment([In]  String^ line, [Out]  List<String^>^% words)
 		{
 			std::wstring_convert<std::codecvt_utf8<wchar_t>> conv;
 			std::string converted_line = conv.to_bytes(msclr::interop::marshal_as<std::wstring>(line));

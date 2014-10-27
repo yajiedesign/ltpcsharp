@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ltpcsharp.native", "ltpcsha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LtpCsharp", "LtpCsharp\LtpCsharp.csproj", "{76DD22ED-95B7-4FCF-861E-D88743C187F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LtpCsharp.Common", "LtpCsharp.Common\LtpCsharp.Common.csproj", "{D4C571DB-0F45-49DA-9B45-0CC28580C75B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -18,6 +20,7 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D2D4998C-29DC-4E73-A169-65208F0EAD5A}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{D2D4998C-29DC-4E73-A169-65208F0EAD5A}.Debug|Win32.Build.0 = Debug|Any CPU
 		{D2D4998C-29DC-4E73-A169-65208F0EAD5A}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{D2D4998C-29DC-4E73-A169-65208F0EAD5A}.Debug|x64.Build.0 = Debug|Any CPU
 		{D2D4998C-29DC-4E73-A169-65208F0EAD5A}.Release|Win32.ActiveCfg = Release|Any CPU
@@ -33,11 +36,19 @@ Global
 		{FE18BAD0-A6DD-4369-A1C2-031C9661FF87}.Release|x64.ActiveCfg = Release|x64
 		{FE18BAD0-A6DD-4369-A1C2-031C9661FF87}.Release|x64.Build.0 = Release|x64
 		{76DD22ED-95B7-4FCF-861E-D88743C187F2}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{76DD22ED-95B7-4FCF-861E-D88743C187F2}.Debug|Win32.Build.0 = Debug|Any CPU
 		{76DD22ED-95B7-4FCF-861E-D88743C187F2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{76DD22ED-95B7-4FCF-861E-D88743C187F2}.Debug|x64.Build.0 = Debug|Any CPU
 		{76DD22ED-95B7-4FCF-861E-D88743C187F2}.Release|Win32.ActiveCfg = Release|Any CPU
 		{76DD22ED-95B7-4FCF-861E-D88743C187F2}.Release|Win32.Build.0 = Release|Any CPU
 		{76DD22ED-95B7-4FCF-861E-D88743C187F2}.Release|x64.ActiveCfg = Release|Any CPU
 		{76DD22ED-95B7-4FCF-861E-D88743C187F2}.Release|x64.Build.0 = Release|Any CPU
+		{D4C571DB-0F45-49DA-9B45-0CC28580C75B}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{D4C571DB-0F45-49DA-9B45-0CC28580C75B}.Debug|Win32.Build.0 = Debug|Any CPU
+		{D4C571DB-0F45-49DA-9B45-0CC28580C75B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D4C571DB-0F45-49DA-9B45-0CC28580C75B}.Debug|x64.Build.0 = Debug|Any CPU
+		{D4C571DB-0F45-49DA-9B45-0CC28580C75B}.Release|Win32.ActiveCfg = Release|Any CPU
+		{D4C571DB-0F45-49DA-9B45-0CC28580C75B}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -143,17 +143,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ltpcsharp.h" />
+    <ClInclude Include="Parser.hpp" />
+    <ClInclude Include="Postagger.hpp" />
+    <ClInclude Include="Recognizer.hpp" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Segmentor.hpp" />
+    <ClInclude Include="Splitsnt.hpp" />
     <ClInclude Include="Stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="ltpcsharp.cpp" />
-    <ClCompile Include="Parser.cpp" />
-    <ClCompile Include="Postagger.cpp" />
-    <ClCompile Include="Recognizer.cpp" />
-    <ClCompile Include="Segmentor.cpp" />
-    <ClCompile Include="Splitsnt.cpp" />
+    <ClCompile Include="LtpFactory.cpp" />
     <ClCompile Include="Stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -169,6 +170,11 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LtpCsharp.Common\LtpCsharp.Common.csproj">
+      <Project>{d4c571db-0f45-49da-9b45-0cc28580c75b}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

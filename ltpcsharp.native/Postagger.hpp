@@ -1,3 +1,4 @@
+#pragma once
 #include "stdafx.h"
 #include "ltpcsharp.h"
 #include <string>
@@ -14,7 +15,7 @@ using namespace System::Runtime::InteropServices;
 
 namespace ltpcsharp_native {
 	
-	public ref class Postagger
+	ref class Postagger :LtpCsharp::Common::IPostagger
 	{
 		void * wrapper = nullptr;
 	public:
@@ -48,7 +49,7 @@ namespace ltpcsharp_native {
 			wrapper = nullptr;
 		}
 
-		int Postag([In] List<String^>^ words,
+		virtual	int Postag([In] List<String^>^ words,
 			[Out] List<String^>^% tags)
 		{
 			auto cppwords = Help::CSharpToCpp(words);

@@ -20,12 +20,12 @@ namespace TestAndDebug
             Segmentor segmentor = new Segmentor(@"..\..\..\ltp_data\cws.model");
 
             segmentor.Segment("爱上一匹野马，可我的家里没有草原。", out words);
-            //Postagger postagger = new Postagger(@"..\..\..\..\ltp_data\pos.model");
-            //postagger.Postag(words, out postags);
-            //Recognizer recognizer = new Recognizer(@"..\..\..\..\ltp_data\ner.model");
-            //recognizer.Postag(words, postags, out rectags);
-            //Parser parser = new Parser(@"..\..\..\..\ltp_data\parser.model");
-            //parser.Parse(words, postags, out heads, out deprels);
+            Postagger postagger = new Postagger(@"..\..\..\ltp_data\pos.model");
+            postagger.Postag(words, out postags);
+            Recognizer recognizer = new Recognizer(@"..\..\..\ltp_data\ner.model");
+            recognizer.Recognize(words, postags, out rectags);
+            Parser parser = new Parser(@"..\..\..\ltp_data\parser.model");
+            parser.Parse(words, postags, out heads, out deprels);
 
         }
     }

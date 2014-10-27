@@ -1,3 +1,4 @@
+#pragma once
 #include "stdafx.h"
 #include <string>
 #include <locale>
@@ -17,10 +18,10 @@ int SplitSentenceCpp(const std::string & paragraph,
 
 namespace ltpcsharp_native {
 
-	public ref class Splitsnt
+	ref class Splitsnt :LtpCsharp::Common::ISplitsnt
 	{
 	public:
-		static int SplitSentence([In]  String^ paragraph, [Out] List<String^>^% sentences)
+		virtual int SplitSentence([In]  String^ paragraph, [Out] List<String^>^% sentences)
 		{
 			std::wstring_convert<std::codecvt_utf8<wchar_t>> conv;
 			std::string converted_paragraph = conv.to_bytes(msclr::interop::marshal_as<std::wstring>(paragraph));
